@@ -50,3 +50,6 @@ KeepEmptyLinesAtTheStartOfBlocks: false
 
 # Ensure switch case indentation
 IndentCaseLabels: true
+
+# Align trailing comments
+AlignTrailingComments: true
