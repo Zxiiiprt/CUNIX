@@ -1,0 +1,52 @@
+---
+# Use a predefined style as a base (LLVM, Google, Chromium, Mozilla, WebKit, Microsoft, GNU)
+# BasedOnStyle: LLVM
+Language: Cpp
+
+ColumnLimit: 120
+IndentWidth: 4
+TabWidth: 4
+# Use spaces instead of tabs
+UseTab: Never
+
+# Align the `*` or `&` with the type name or with the variable name
+PointerAlignment: Right
+
+# Break function declarations into separate lines for each parameter
+BreakBeforeBraces: Allman
+
+# Force braces around single-line statements
+# AlwaysBreakAfterReturnType: None
+
+# Require braces for single-line if/else/for/while statements
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+
+# Require braces for if/else/for/while statements, even if they are one line
+BraceWrapping:
+    AfterClass: true
+    AfterControlStatement: true
+    AfterEnum: true
+    AfterFunction: true
+    AfterCaseLabel: false # Don't want braces around case statements
+    AfterNamespace: false
+    AfterStruct: true
+    AfterUnion: true
+    BeforeElse: true
+    IndentBraces: false
+
+# How to format the colon in inheritance lists and constructor initializer lists
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 4
+
+# Ensure that there is a space between the keywords and parentheses
+SpaceBeforeParens: ControlStatements # false to disable
+
+# Control how to format empty lines at the start of a block
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# Ensure switch case indentation
+IndentCaseLabels: true
